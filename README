@@ -1,0 +1,7 @@
+This script determines CIDR/NetName for each IP in access.log (NCSA format) via Whois.
+This can be used to localize misbehaving crawlers when they use different IP ranges of the same provider.
+
+-------------------------------------------------------------------------------
+
+Possible usage:
+tail -n 1000 access.log | ./scanAccessLog.sh
